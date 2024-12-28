@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Power List - Focus on what matters most. Track your daily tasks and build better habits.">
+    <meta name="keywords" content="power list, task management, productivity, habit tracking, 75 hard">
+    <meta property="og:title" content="Power List - Focus on what matters most">
+    <meta property="og:description" content="Track your daily tasks and build better habits with Power List">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Power List - Focus on what matters most">
+    <meta name="twitter:description" content="Track your daily tasks and build better habits with Power List">
+    <title>Power List</title>
+    <!-- External Scripts -->
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js" defer></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" defer></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+    <!-- Main Styles -->
+    <link href="styles/main.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white">
+    <div id="root"></div>
+
+    <!-- Utility Scripts -->
+    <script type="text/babel" src="utils/dateUtils.js"></script>
+    <script type="text/babel" src="utils/storageUtils.js"></script>
+
+    <!-- Component Scripts -->
+    <script type="text/babel" src="components/Header.js"></script>
+    <script type="text/babel" src="components/DateNavigation.js"></script>
+    <script type="text/babel" src="components/WeekDots.js"></script>
+    <script type="text/babel" src="components/TaskList.js"></script>
+    <script type="text/babel" src="components/TaskItem.js"></script>
+    <script type="text/babel" src="components/TaskEditor.js"></script>
+    <script type="text/babel" src="components/VisionBoard.js"></script>
+    <script type="text/babel" src="components/ImageCropper.js"></script>
+    <script type="text/babel" src="components/Dashboard.js"></script>
+    <script type="text/babel" src="components/FloatingButton.js"></script>
+    <script type="text/babel" src="components/CelebrationToast.js"></script>
+    <script type="text/babel" src="components/ReminderToast.js"></script>
+    <script type="text/babel" src="components/TaskNotification.js"></script>
+    <script type="text/babel" src="components/GoalPlanner.js"></script>
+    <script type="text/babel" src="components/GoalCard.js"></script>
+    <script type="text/babel" src="components/MilestoneList.js"></script>
+    <script type="text/babel" src="components/ActionStep.js"></script>
+
+    <!-- Main Application Script -->
+    <script type="text/babel" src="app.js"></script>
+
+    <!-- Initial Rendering -->
+    <script type="text/babel">
+        const rootElement = document.getElementById("root");
+        ReactDOM.render(<Dashboard />, rootElement);
+    </script>
+</body>
+</html>
